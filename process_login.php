@@ -16,6 +16,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header("Location: index.php");
         exit;
     } else {
+        //hekloa
         header("Location: login.php?error=Invalid credentials");
         exit;
     }

@@ -1,0 +1,435 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto' , Arial,  sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    height: 150px;
+    text-shadow: 0 0 4px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    background: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg) no-repeat;
+    background-size: cover;
+    width: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.header h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.navi a {
+    display: inline-block;
+    background-color: rgb(14, 240, 51);
+    padding: 15px;
+    margin-left: 60px;
+    color: rgb(54, 49, 49);
+    text-decoration: none;
+    font-size: 25px;
+    border: 2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Shadow nhẹ hơn */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+.navi a:hover {
+    background-color: rgb(12, 212, 56);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Shadow nổi hơn khi hover */
+    transform: translateY(-2px); 
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(67, 218, 8);
+    padding: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.nav-item { 
+    text-align: center;
+}
+
+.nav-item a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    padding: 15px;
+    border: 2px solid white;
+    border-radius: 15px;
+    margin-bottom: 8px;
+    background-color: rgb(48, 187, 8);
+    font-family: 'Roboto', Arial, sans-serif;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15); /* Shadow nhẹ */
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2); /* Text-shadow nhẹ */
+}
+.nav-item a:hover {
+    background-color: rgb(255, 69, 58); /* Màu đỏ đậm hơn khi hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px); /* Nâng nhẹ khi hover */
+}
+.members {
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "member1 member2 member3 member4";
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+.member-header {
+    grid-area: header;
+    padding: 20px;
+}
+.member-header h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+    font-weight: 600;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15); /* Shadow nhẹ */
+}
+.member1 {
+    grid-area: member1;
+    padding: 20px;
+}
+.member2 {
+    grid-area: member2;
+    padding: 20px;
+}
+.member3 {
+    grid-area: member3;
+    padding: 20px;
+}
+.member4 {
+    grid-area: member4;
+    padding: 20px;
+}
+.member1, .member2, .member3, .member4 {
+    padding: 20px;
+    background: #fff; /* Nền trắng cho card */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow card */
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.member1:hover, .member2:hover, .member3:hover, .member4:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2); /* Shadow đậm hơn khi hover */
+    transform: translateY(-4px); /* Nâng card lên */
+}
+.contact {
+    padding: 40px;
+    margin: 40px auto;
+    max-width: 800px; /* Giới hạn chiều rộng */
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb);
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 16px;
+    color: #222;
+}
+
+.contact-info strong {
+    color: #34c759; /* Xanh lá đồng bộ */
+}
+
+.contact-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #34c759, #28a745);
+    padding: 12px 24px;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: linear-gradient(135deg, #28a745, #219653);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+/* study */
+/* study */
+.container {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa, #e4e7eb); 
+    max-width: 1000px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1); 
+}
+.container h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Poppins', Arial, sans-serif;
+    margin-bottom: 30px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+.question {
+    padding: 20px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.question:hover {
+    transform: translateY(-2px);
+}
+.question p {
+    font-size: 20px;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+.form-check {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    gap: 10px;
+}
+.form-check input {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+}
+.form-check label {
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn {
+    text-align: center;
+}
+.btn button {
+    font-size: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: 'Poppins', Arial, sans-serif;
+    width: 150px;
+    background: linear-gradient(135deg, #200bdf, #06b3df);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+.btn button:hover {
+    background: linear-gradient(135deg, #28a745, #219653);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+/* form dang nhap */
+.body1 {
+    background-color: rgb(67, 218, 8);
+}
+.container-form {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.container-form .form {
+    width: 420px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #34c759, #28a745);
+    padding: 40px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+
+}
+.form h1 {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins', Arial, sans-serif;;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+.form .input-box {
+    width: 100%;
+    height: 45px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+.input-box input {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 16px;
+    padding: 15px;
+    font-weight: 500;
+    color: #333;
+    background-color: #f5f7fa;
+    border: 1px solid #ccc;
+}
+.remember-me {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.remember-me label {
+    font-size: 18px;
+    font-weight: 400;
+}
+.remember-me a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    transition: all 0.3s ease;
+}
+.remember-me a:hover {
+    border-radius: 15px;
+    background-color: #0af002;
+}
+.enter {
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.enter button {
+    width: 100%;
+    font-size: 20px;
+    border-radius: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #fff, #e4e7eb);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.enter button:hover {
+    transform: translateY(-2px);
+   
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #e4e7eb, #d1d5db);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.register {
+    text-align: center;
+    padding: 10px;
+}
+.register a {
+    text-decoration: none;
+    color: white;
+    transition: all 0.3s ease;
+}
+.register a:hover {
+    border-radius: 15px;
+    background-color: #0af002;
+}
+.register p {
+    font-size: 18px;
+    
+}
+/* dang ky */
+.body2 {
+    background-color: rgb(67, 218, 8);
+}
+.container-register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.container-register .register-form {
+    width: 420px;
+    background: linear-gradient(135deg, #34c759, #28a745);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+.register-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+.register-form .input-box1 {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 100%;
+    padding: 5px;
+}
+.input-box1 input {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    font-size: 15px;
+    padding: 15px;
+    font-weight: 500;
+    color: #333;
+    background-color: #f5f7fa;
+    border: 1px solid #ccc;
+}
+.btn3 {
+    text-align: center;
+}
+.btn3 button {
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 15px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #fff, #e4e7eb);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+}
+.btn3 button:hover {
+    transform: translateY(-2px);
+   
+    transition: all 0.3s ease;
+    background: linear-gradient(135deg, #e4e7eb, #d1d5db);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+}
+.login-form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+.login-form a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
